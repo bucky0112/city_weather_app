@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Weather App</title>
+  <link rel="stylesheet" href="scss/main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css
+    "/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <input type="text" class="search-key"
+        placeholder="Search City...">
+      <a href="#" class="search-btn">Enter</a>
+    </div>
+    <div class="main">
+      <section class="location">
+        <div class="city">Taichung, TW</div>
+        <div class="date">Saturday 26 Sep 2020</div>
+      </section>
+      <div class="current">
+        <div class="temp">28°c</div>
+        <div class="weather">Clouds</div>
+        <div class="min-max">
+          28°c / 32°c
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
