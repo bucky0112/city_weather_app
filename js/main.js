@@ -39,6 +39,7 @@ const getData = (cityName) => {
   axios.get(`${api.url}weather?q=${cityName}&units=metric&id=524901&lang=zh_tw&appid=${api.key}`)
   .then((res) => {
     weatherData = res.data;
+    searchByKey.value = '';
     render();
   }).catch(() => {
     Swal.fire(
@@ -46,6 +47,7 @@ const getData = (cityName) => {
       'Please typing correct city name.',
       'error',
     );
+    searchByKey.value = '';
   });
 }
 
