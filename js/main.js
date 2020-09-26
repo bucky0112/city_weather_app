@@ -54,7 +54,7 @@ const getData = (cityName) => {
 const render = () => {
   let city = document.querySelector('.city');
   city.innerHTML = `${weatherData.name}, ${weatherData.sys.country}`;
-  const now = new Date();
+  let now = new Date();
   let date = document.querySelector('.date');
   date.innerHTML = dateNow(now);
 
@@ -79,3 +79,4 @@ const dateNow = (d) => {
 
   return `${day} ${date} ${month} ${year}`;
 }
+
